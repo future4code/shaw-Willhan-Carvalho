@@ -101,7 +101,7 @@ const frase1 = comoEstaOdia (frase)
 
  
 
- const calculo = Number (prompt("digite um numero"))
+ /* const calculo = Number (prompt("digite um numero"))
  const calculo1 = Number (prompt("digite um numero"))
 
 
@@ -141,3 +141,5 @@ function soma4(divisao){
 }
 const resultado4 = soma4(divisao)
 console.log(`divisao: ${resultado4}`)
+ */
+
