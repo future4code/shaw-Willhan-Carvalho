@@ -1,4 +1,4 @@
-  let array
+/*   let array
 console.log('a. ', array)//indefinido
 
  array = null
@@ -59,3 +59,9 @@ listaDeTarefas.push(atividade3)
 const atividadeFeita = prompt ("qual atividade você realizou hoje?")
 listaDeTarefas.pop(atividadeFeita)
 console.log (listaDeTarefas)
+ */
+function minhaFuncao(variavel) {
+  return variavel * 5
+}
+console.log(minhaFuncao(2))
+console.log(minhaFuncao(10))
