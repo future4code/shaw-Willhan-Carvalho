@@ -1,4 +1,4 @@
- /*  // EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
+  // EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
 
 // EXERCÍCIO 0A
 function soma(num1, num2) {
@@ -91,38 +91,42 @@ const valorIngresso = 30
 
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-const custoDoespetaculo = custo / valorIngresso
-return custoDoespetaculo 
-}
+ const custoTotal = custo / valorIngresso
+return custoTotal
+
+} 
 
 // EXERCÍCIO 08
-const string1 = ("eae como esta hj")
-const string2 = ("ola")
+
 
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-const resultado = string1 >= string2 
-
-return resultado 
+let string = string1.length 
+let string3 = string2.length
+let resulta = string === string3
+return resulta 
 }
+console.log(checaStringsMesmoTamanho())
 
-  // EXERCÍCIO 09
-const array = [1, 2, 3]
+
+ // EXERCÍCIO 09
+
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+
 return array[0]
-}   */
+}   
 
 // EXERCÍCIO 10
-/* const array =[1,2,3,4,5]
+
 function retornaUltimoElemento(array) {
 // implemente sua lógica aqui
 const array1 = array.length-1
 
-return array[array1] 
+return array[array1]
 
 } 
- /* // EXERCÍCIO 11
+ // EXERCÍCIO 11
 
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
@@ -132,32 +136,50 @@ function trocaPrimeiroEUltimo(array) {
   array[0] = primeiroArray
   array[finalIndex] = ultimoArray
   return array 
-}  */
+}  
 
 // EXERCÍCIO 12
-const string1 = banana
-const const2 = Banana
+
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
 const a =string2.toLowerCase()
 const b =string1.toLowerCase()
 return a===b
-}
+} 
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-
+const anoAtual = Number (prompt("ano autal"))
+const anoDeNascimento = Number (prompt("ano de nascimento"))
+const anoDoRG = Number (prompt("ano do rg"))
+let ano = anoAtual - anoDeNascimento
+let rg = anoAtual - anoDoRG
+let jovem = rg >= 5 && ano <= 20
+let adulto = ano > 20 && ano <= 50 && rg >= 10 
+let idoso = ano > 50 && rg >= 15
+let resultado = jovem || adulto || idoso
+console.log(resultado);
 }
+
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-
+let saoBissexto = ano % 400 === 0 || ano %  4 === 0 && ano % 100 !==0
+return saoBissexto
 }
+checaAnoBissexto()
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
+ 
+const idade = prompt ("Você tem mais de 18 anos?")
+const escolaridade = prompt ("Você possui ensino médio completo")
+const disponibilidade = prompt (" Você possui disponibilidade exclusiva durante os horários do curso?")
+let resultado = idade == ("sim") && escolaridade == ("sim") && disponibilidade == ("sim")
+console.log(resultado)
+
 
 }
