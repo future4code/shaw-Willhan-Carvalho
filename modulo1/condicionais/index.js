@@ -129,12 +129,12 @@ if (genero == "fantasia" && valor === 15)
 
 
 const nomeCompleto = prompt("Digite seu nome completo:")
-const tipoDeJogo = prompt("Digite o tipo de jogo IN p/ Intercional ou DO p/ Domestico").toUpperCase()
+const tipoDeJogo = prompt("Digite o tipo de jogo IN p/ Internacional ou DO p/ Domestico").toUpperCase()
 const etapaJogos = prompt("Digite qual etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final").toUpperCase()
 const categoria = Number(prompt("Digite o numero da categoria 1,2,3 ou 4"))
 const quantidaDeIngressos = Number(prompt("Quantos ingressos?"))
 
-
+console.log( "---Dados da compra---")
 //TIPO DE JOGO
 if(tipoDeJogo ==="IN"){
     console.log(`Nome do Cliente:${nomeCompleto}`);
@@ -150,7 +150,7 @@ if(etapaJogos === "SF"){
     console.log("Decisão do Terceiro Lugar")
 
 }else if(etapaJogos==="FI"){
-    console.log("Final");
+    console.log("Etapa do jogo: Final");
 }
 //CATEGORIA
 if(categoria === 1){
@@ -162,7 +162,6 @@ if(categoria === 1){
 }else if(categoria === 4){
     console.log(`Categoria: ${categoria}`);
 }
-console.log(`Quantidade de ingressos: ${quantidaDeIngressos}`);
 console.log(`Quantidade de ingressos: ${quantidaDeIngressos}`);
 console.log("--- Valores ---")
 let valorDoSf = [1320.00, 880.00, 550.00, 220.00]
