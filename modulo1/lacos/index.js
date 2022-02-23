@@ -46,36 +46,38 @@ if (estimacao === 0) {
 
 const arrayOriginal = [20, 10, 33, 40, 60]
 
-
+function aparte1(array1){
 for(let i = 0; i < 5; i++){
-    console.log(arrayOriginal[i])
+    console.log(array1[i])
 }
-    let i = 0
+}
+aparte1(arrayOriginal)
 
-    while(i <= arrayOriginal.length){
-    let resultado = arrayOriginal[i]/10
+function parte2 (array2){
+    let i = 0
+    while(i < array2.length){
+    let resultado = array2[i]/10
         i++
         console.log(resultado);
     }
-  
-    
+  }
+    parte2(arrayOriginal)
 
+function parte3 (array3){
     let array = []
-    for(let i = 0; i <= arrayOriginal.length; i++){
-    if(arrayOriginal[i] % 2 === 0){
-     array.push(arrayOriginal[i])
+    for(let i = 0; i <= array3.length; i++){
+    if(array3[i] % 2 === 0){
+     array.push(array3[i])
      
 
     } 
-
+    }
+    console.log(array);
+    }
+    parte3(arrayOriginal)
    
-    }
+    
 
-    console.log(array); 
-
-    function restante (array){
-        let novoArray = []
-        
-    }
-
-
+const novoArray = ["willhan"]
+   
+ 
