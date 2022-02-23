@@ -1,4 +1,4 @@
-/* const respostaDoUsuario = prompt("Digite o número que você quer testar")
+ /* const respostaDoUsuario = prompt("Digite o número que você quer testar")
 const numero = Number(respostaDoUsuario)
 
 if (numero % 2 === 0) {
@@ -128,7 +128,7 @@ if (genero == "fantasia" && valor === 15)
 
 
 
-const nomeCompleto = prompt("Digite seu nome completo:")
+/* const nomeCompleto = prompt("Digite seu nome completo:")
 const tipoDeJogo = prompt("Digite o tipo de jogo IN p/ Internacional ou DO p/ Domestico").toUpperCase()
 const etapaJogos = prompt("Digite qual etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final").toUpperCase()
 const categoria = Number(prompt("Digite o numero da categoria 1,2,3 ou 4"))
@@ -310,6 +310,8 @@ if(tipoDeJogo === "IN" && etapaJogos === "FI"  && categoria === 1){
     let resultado = variavelDolar * quantidaDeIngressos
     console.log(`O valor do ingresso em Dolar é: ${variavelDolar}`)
     console.log(`Valor total :${resultado}`);
-}
+}  */
 
 // Densevolvi junto ao Pablo Gomes dos Santos
+
+
