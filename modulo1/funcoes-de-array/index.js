@@ -44,7 +44,7 @@
     { nome: "Caramelo", raca: "Vira-lata"},
  ]
 //A
-/const nomeDoPet = pets.map((pets)=>{
+const nomeDoPet = pets.map((pets)=>{
     console.log(pets.nome)
 })  
 
@@ -90,7 +90,7 @@ let produto1 = produtos.map((produto)=>{
     return produto.nome
       
     })
- console.log(produto1) */
+ console.log(produto1) 
 
  // B
    const 
