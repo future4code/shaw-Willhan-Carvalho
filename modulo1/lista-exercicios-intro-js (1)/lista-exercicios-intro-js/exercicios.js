@@ -1,4 +1,4 @@
-  // EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
+/*   // EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
 
 // EXERCÍCIO 0A
 function soma(num1, num2) {
@@ -182,4 +182,5 @@ let resultado = idade == ("sim") && escolaridade == ("sim") && disponibilidade =
 console.log(resultado)
 
 
-}
+} */
+
