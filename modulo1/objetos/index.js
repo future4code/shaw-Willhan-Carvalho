@@ -1,4 +1,4 @@
-/* const filme = {
+ const filme = {
 	nome: "Auto da Compadecida", 
 	ano: 2000, 
 	elenco: [
@@ -16,7 +16,7 @@ console.log(filme.elenco[0])//"Matheus Nachtergaele"
 console.log(filme.elenco[filme.elenco.length - 1])//"Virginia Cavendish"
 console.log(filme.transmissoesHoje[2])//{canal: "Globo", horario: "14h"} */
 
-/* const cachorro = {
+const cachorro = {
 	nome: "Juca", 
 	idade: 3, 
 	raca: "SRD"
@@ -30,7 +30,7 @@ console.log(cachorro)//juca
 console.log(gato)//juba
 console.log(tartaruga)//jubo */
 
-/* function minhaFuncao(objeto, propriedade) {
+function minhaFuncao(objeto, propriedade) {
 	return objeto[propriedade]
 }
 
@@ -44,7 +44,7 @@ console.log(minhaFuncao(pessoa, "backender"))//false
 console.log(minhaFuncao(pessoa, "altura")) //undefined
 //Explique o valor impresso no console. Você sabe por que isso aconteceu? nao tem valor definido. */
 
-/* const pessoa = {
+const pessoa = {
  nome :"willhan",
  apelido : ["will","wil","bill"]
  
@@ -59,9 +59,9 @@ const segundaPessoa = { ...pessoa, apelido: ["fofao","fofim","ursao"]
 
 }
 console.log(`Eu sou ${segundaPessoa.nome}, mas pode me chamar de ${segundaPessoa.apelido[0]}, ${segundaPessoa.apelido[1]} ou
-${segundaPessoa.apelido[2]}`) */
+${segundaPessoa.apelido[2]}`) 
 
-/* const pessoa = {
+const pessoa = {
     nome:"willhan",
     idade: 22,
     profisao: "estudante"
@@ -86,8 +86,7 @@ resultado.push(valor1,nome1,idade1,profissao1,valor2)
   return resultado
 }
 console.log(minhaFuncao(pessoa)); 
- */
-
+ 
 
 let frutas = {
  objeto:{nome: "mamao", disponibilidade:true},
