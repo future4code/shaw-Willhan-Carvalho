@@ -1,4 +1,4 @@
- const usuarios = [
+ /* const usuarios = [
     { nome: "Amanda Rangel", apelido: "Mandi" },
     { nome: "Laís Petra", apelido: "Laura" },
     { nome: "Letícia Chijo", apelido: "Chijo" }
@@ -9,7 +9,7 @@
   })
   // vai imprimir nome,posiçao e apelido */
 
-  const usuarios = [
+ /*  const usuarios = [
     { nome: "Amanda Rangel", apelido: "Mandi" },
     { nome: "Laís Petra", apelido: "Laura" },
     { nome: "Letícia Chijo", apelido: "Chijo" },
@@ -70,7 +70,7 @@ const nomeDoPet3 = pets.filter((pets)=>{
 console.log(nomeDoPet3); 
 
 // atividade 2
-
+ */
 const produtos = [
     { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
     { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
@@ -84,24 +84,28 @@ const produtos = [
     { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
  ]
 
- // A
+/*  // A
 let produto1 = produtos.map((produto)=>{
     
     return produto.nome
       
     })
- console.log(produto1) 
+ console.log(produto1)   */
 
  // B
    const 
 
- const produtos2 = produtos.filter((produtos)=>{
-    return produtos.nome && produtos.preco 
+   let desconto1 = produtos.filter((produtos)=>{
+   let desconto6 = produtos * 0.05 - produtos.preco
+   return desconto6
 
+ }).map((produtos)=>{
+
+  return `${produtos.nome}, ${produtos.preco}`
  })
 console.log(produtos2);
  
-// C
+/* // C
  const bebidas = produtos.filter((produtos)=>{
     return produtos.categoria === "Bebidas"
 })
@@ -121,4 +125,4 @@ const sabao = produtos.filter((produtos)=>{
     return (` Compre ${produtos.nome}, por ${produtos.preco}`)
 })
 
-console.log(sabao);
+console.log(sabao); */
