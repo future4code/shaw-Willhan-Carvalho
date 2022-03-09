@@ -1,0 +1,31 @@
+ .redes{
+     width: 400px;
+     height: 400px;
+ }
+ .centralizar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ header,footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+ .painelDeControle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 12%;
+}
+
+a{
+    color: red;
+}
+.redesSociais{
+    color: blue;
+}
+
