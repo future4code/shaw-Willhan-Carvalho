@@ -44,6 +44,8 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    
+    
 }
 
 .botao-amarelo:hover {
@@ -53,6 +55,10 @@ div img {
 .container {
     height: 500px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .icone {
@@ -77,12 +83,14 @@ div img {
 
 #container-para-comprar {
     background-color: #e7eb90;
+    
 }
 
 #container-para-comprar>p {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
+    block-size: ;
 }
 
 
