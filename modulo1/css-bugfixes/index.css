@@ -35,8 +35,9 @@ div>p:first-child {
     width: 12em;
 }
 
-div img {
-    background: black;
+ td img {
+     width: 50px;
+    
 }
 
 .botao-amarelo {
