@@ -78,6 +78,6 @@ function parte3 (array3){
    
     
 
-const novoArray = ["willhan"]
+
    
  
