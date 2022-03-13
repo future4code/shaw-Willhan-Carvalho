@@ -92,6 +92,11 @@ margin-left: 50px;
 margin-top: 100px;
 
 }
+.labenu{
+    margin-left: 30px;
+
+
+}
 
 
 .botao{
@@ -99,14 +104,39 @@ margin-top: 100px;
     display: block;
 }
 
+.corpo{
+    width: 960px;
+    margin: auto;
+}
 
 .imagem{
     width: 200px;
-
+    
+   
+    
+    
 }
 
+.texto-willhan{
+    width: 450px;
+    margin: 0 20px;
+}
 
+.texto-imagem{
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+}
+.texto-footer{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
 
-a{
-    width: 50px;
+.redes-sociais{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 2%;
 }
