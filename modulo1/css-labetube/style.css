@@ -1,0 +1,74 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d0126;
+    color: #f20530;
+    align-items: center;
+    padding: 15px;
+
+    
+}
+input{
+    width: 100px;
+    height: 30px;
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    padding-left: 30px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+div{
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+
+}
+main p {
+    font: bold;
+}
+/* pagina video1.html*/
+.video-um{
+    display: flex;
+    justify-content: center;
+}
+.texto-um{
+    color: #f20530;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    height: 8vh;
+    margin-top: 60px;
+}
+
+footer span {
+    color: #f20530;
+}
