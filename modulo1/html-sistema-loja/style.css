@@ -1,0 +1,57 @@
+ .redes{
+     width: 200px;
+     height: 200px;
+ }
+ .centralizar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 5%;
+ }
+
+ header,footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+ .painelDeControle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 12%;
+}
+
+a{
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 16px;
+    border:black solid 2px;
+    color:black;
+
+}
+
+a:hover{
+    background-color: black;
+    transition: 0.3s;
+    color: white;
+}
+
+
+
+.redesSociais{
+    color: blue;
+}
+
+table {
+    width: 100%;
+    
+}
+
+td {
+    text-align: center;
+    font-size: 18px;
+}
+
+
