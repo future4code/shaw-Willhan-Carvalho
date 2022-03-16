@@ -52,6 +52,26 @@ main p {
 
 
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+main{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    height: 100%;
+    padding-left: 30px;
+
+}
+
+iframe{
+    width: 310px;
+}
+
+
+}
+
+
+
+
+
 
 
 
