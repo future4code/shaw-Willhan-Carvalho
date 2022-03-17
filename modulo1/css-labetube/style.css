@@ -20,6 +20,7 @@ input{
 }
 
 main{
+  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -39,15 +40,38 @@ div{
 main p {
     font: bold;
 }
+.video-um{
+    padding-right: 45px;
+
+    
+
+
+}
+
+footer{
+   
+    text-align: center;
+    height: 8vh;
+    margin-top: 60px;
+}
+
+footer span {
+
+    color: #f20530;
+}
+
+
 /* pagina video1.html*/
 .video-um{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 .texto-um{
     color: #f20530;
 }
+
 
 
 
