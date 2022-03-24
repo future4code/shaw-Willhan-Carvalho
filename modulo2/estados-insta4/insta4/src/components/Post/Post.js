@@ -43,9 +43,9 @@ const PostPhoto = styled.img`
 class Post extends React.Component {
   state = {
     curtido: false,
-    numeroCurtidas: 10,
+    numeroCurtidas: 0,
     comentando: false,
-    numeroComentarios: 20
+    numeroComentarios:0,
   }
 
   onClickCurtida = () => {
