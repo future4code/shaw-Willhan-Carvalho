@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { Mensagens} from "./components/mensagens"
 
 const Main = styled.div`
-  margin-top: 50px;
+  margin-top: 30px;
   width: 500px;
-  height: 450px;
+  height: 400px;
   border: 1px black solid;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   background-color: black;
+  ;
   
   @media (max-width: 360px) {
     width: 45vh;

@@ -16,6 +16,20 @@ const InputUsuario = styled.input`
     bottom: 25vh;
     height: 17px;
 }
+    @media (max-width: 375px) {
+    width: 11vh;
+    margin-left: 1px;
+    height: 15px;
+    bottom: 27vh;
+    height: 15px;
+}
+    @media (max-width: 360px) {
+    width: 8vh;
+    margin-left: 1px;
+    height: 15px;
+    bottom: 24.5vh;
+    height: 15px;
+}
 `
 
 const InputMensagem = styled.input`
@@ -38,7 +52,7 @@ const InputMensagem = styled.input`
 
 const Botao = styled.button`
     border-radius: 5px;
-    margin-left: 450px;
+    margin-left: 470px;
     height: 25px;
     position: fixed;
     bottom: 25.65vh;
@@ -54,18 +68,6 @@ const Botao = styled.button`
     height: 20.5px;
     bottom: 25.1vh;
 }
-    @media (max-width: 375px) {
-    margin-left: 315px;
-    height: 19px;
-    bottom: 27vh;
-    width: 60px;
-}
-    @media (max-width: 360px) {
-    margin-left: 270px;
-    height: 19px;
-    bottom: 24.5vh;
-    width: 50px;
-    }
 `
 
 const EstiloDiv = styled.div`
@@ -113,15 +115,15 @@ export class Mensagens extends React.Component {
 
     mandarMensagem = () => {
 
-        const primeiraMensagem = {
+        const novaMensagem = {
             mensagem: this.state.valorInputMensagem,
             usuario: this.state.valorInputUsuario
         }
 
-        const segundaMensagens = [...this.state.mensagemEnviada, primeiraMensagem]
+        const novasMensagens = [...this.state.mensagemEnviada, novaMensagem]
 
         this.setState({
-            mensagemEnviada: segundaMensagens,
+            mensagemEnviada: novasMensagens,
             valorInputMensagem: "",
             valorInputUsuario: ""
         })
@@ -167,4 +169,3 @@ export class Mensagens extends React.Component {
         )
     }
 }
- export default Mensagens
