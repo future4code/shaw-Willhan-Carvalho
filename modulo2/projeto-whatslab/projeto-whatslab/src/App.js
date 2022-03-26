@@ -5,7 +5,7 @@ import { Mensagens} from "./components/mensagens"
 const Main = styled.div`
   margin-top: 78px;
   width: 539px;
-  height: 400px;
+  height: 390px;
   border: 1px black solid;
   margin-left: auto;
   margin-right: auto;
