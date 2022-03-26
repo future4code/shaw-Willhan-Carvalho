@@ -9,27 +9,6 @@ const InputUsuario = styled.input`
     bottom: 25.65vh;
     border: 1px solid gray;
     height: 20px;
-    
-    @media (max-width: 1400px) {
-    width: 12vh;
-    margin-left: 1px;
-    bottom: 25vh;
-    height: 17px;
-}
-    @media (max-width: 375px) {
-    width: 11vh;
-    margin-left: 1px;
-    height: 15px;
-    bottom: 27vh;
-    height: 15px;
-}
-    @media (max-width: 360px) {
-    width: 8vh;
-    margin-left: 1px;
-    height: 15px;
-    bottom: 24.5vh;
-    height: 15px;
-}
 `
 
 const InputMensagem = styled.input`
@@ -41,13 +20,6 @@ const InputMensagem = styled.input`
     bottom: 25.65vh;
     border: 1px solid gray;
     height: 20px;
-    
-    @media (max-width: 1400px) {
-    width: 32vh;
-    margin-left: 115px;
-    bottom: 25vh;
-    height: 17px;
-}
 `
 
 const Botao = styled.button`
@@ -62,12 +34,6 @@ const Botao = styled.button`
     :hover{
         background-color: rgb(0,250,154);
   }
-    @media (max-width: 1400px) {
-    width: 70px;
-    margin-left: 395px;
-    height: 20.5px;
-    bottom: 25.1vh;
-}
 `
 
 const EstiloDiv = styled.div`
@@ -75,7 +41,7 @@ const EstiloDiv = styled.div`
     padding-left:5px ;
 `
 
-const BalaoMensagem = styled.div`
+const BarraDeMensagem = styled.div`
     background-color: lightgreen;
     border-radius: 10px 10px 10px 0px;
     margin-left: 2px;
@@ -88,14 +54,14 @@ const BalaoMensagem = styled.div`
     word-wrap: break-word;
 `
 
-const EstiloH1 = styled.h1`
+const Estilo = styled.h1`
     color: green;
     font-size: 15px;
     margin-bottom: -14px;
     
 `
 
-const EstiloP = styled.p`
+const EstiloDois = styled.p`
     font-size: 14px;
     
 `
@@ -143,10 +109,10 @@ export class Mensagens extends React.Component {
         const listaDeMensagens = this.state.mensagemEnviada.map((msg) => {
             return (
                 <div>
-                    <BalaoMensagem>
-                        <EstiloH1>{msg.usuario}</EstiloH1>
-                        <EstiloP>{msg.mensagem}</EstiloP>
-                    </BalaoMensagem>
+                    <BarraDeMensagem>
+                        <Estilo>{msg.usuario}</Estilo>
+                        <EstiloDois>{msg.mensagem}</EstiloDois>
+                    </BarraDeMensagem>
                 </div>
             )
         })
