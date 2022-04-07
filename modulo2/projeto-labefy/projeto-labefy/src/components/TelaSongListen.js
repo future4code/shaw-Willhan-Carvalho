@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import styled from "styled-components";
-// import { TelaListaPlaylists } from "./TelaListaPlaylists";
+
 const Page = styled.div`
   background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
   height: 100vh;
@@ -71,32 +71,26 @@ export class TelaSongListen extends React.Component {
     id: "",
     playlists: [],
   };
-  // state = {
-  //     ,
-  //     playlistDetails: [],
-  //   };
+ 
   componentDidMount() {
-    this.pegarPlaylists(); //Mostra os usuários na tela ao abrir a tela sem precisar clicar em um botão
+    this.pegarPlaylists(); 
   }
-  //   componentDidUpdate() {
-  //     this.pegarUsuarios(); //Atualiza a tela quando eu deleto o usuário, pegando a lista de novo e deletando o usuário imediatamente
-  //   }
+ 
 
   pegarPlaylists = () => {
-    // console.log(this.state); //Ver se realmente estou pegando os usuarios
+   
 
     const url =
       "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
-    const headers = { headers: { Authorization: "francine-lima-moreira" } };
+    const headers = { headers: { Authorization: "Willhan-marques-Shaw" } };
     axios
       .get(url, headers)
       .then((res) => {
         this.setState({ playlists: res.data.result.list });
-        //   console.log([res]); //Ver os dados no console
-        //   console.log(res.data.result.list);
+       
       })
       .catch((err) => {
-        // console.log(err);
+       
 
         alert(
           "Ocorreu um problema, pode ser que você não esteja conectado a internet, tente novamente mais tarde."
@@ -106,17 +100,16 @@ export class TelaSongListen extends React.Component {
 
   detailsPlaylist = (id) => {
     const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${id}/tracks`;
-    const headers = { headers: { Authorization: "francine-lima-moreira" } };
+    const headers = { headers: { Authorization: "Willhan-marques-Shaw" } };
     axios
       .get(url, headers)
       .then((res) => {
         console.log(res.data.result.tracks);
         this.setState({ track: res.data.result.tracks });
-        // this.detailsPlaylist(); //fazendo o mesmo do did update mas de outra forma, pegando os usuarios de novo apos o deletar.
+       
       })
       .catch((err) => {
-        console.log(err);
-        // alert("Ocorreu um erro tente novamente mais tarde");
+    
       });
   };
 
@@ -132,7 +125,7 @@ export class TelaSongListen extends React.Component {
       );
     });
 
-    // // console.log(this.state.track);
+  
     const listaTracks = this.state.track.map((track) => {
       return (
         <CardSong key={track.id}>

@@ -50,33 +50,8 @@ const Body = styled.div`
     color: brown;
     font-size: 45px;
   }
-`;
+`
 
-// const TelaParaAddMusic = styled.div`
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-//     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-//   display: flex;
-
-//   align-items: center;
-//   width: 100%;
-//   background-color: cadetblue;
-//   button {
-//     color: brown;
-//     border: 1px solid rosybrown;
-//     border-radius: 30px;
-//     padding: 8px;
-//     margin: 8px;
-//   }
-//   input {
-//     border: 3px solid rosybrown;
-//     border-radius: 30px;
-//     padding: 8px;
-//     margin: 8px;
-//   }
-//   h2 {
-//     color: brown;
-//   }
-// `;
 export class TelaAddMusic extends React.Component {
   state = {
     musics: [],
@@ -84,7 +59,7 @@ export class TelaAddMusic extends React.Component {
     nome: "",
     artists: "",
     music: "",
-    // playlistName: "",
+   
   };
   handlePlaylistId = (event) => {
     this.setState({ id: event.target.value });
@@ -101,7 +76,7 @@ export class TelaAddMusic extends React.Component {
     this.setState({ music: event.target.value });
   };
   componentDidMount() {
-    this.addMusics(); //Mostra os usuários na tela ao abrir a tela sem precisar clicar em um botão
+    this.addMusics();
   }
   addMusics = () => {
     const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${this.state.id}/tracks`;
@@ -110,35 +85,25 @@ export class TelaAddMusic extends React.Component {
       artist: this.state.artists,
       url: this.state.music,
     };
-    const headers = { headers: { Authorization: "francine-lima-moreira" } };
+    const headers = { headers: { Authorization: "Willhan-Marques-Shaw" } };
     axios
       .post(url, body, headers)
       .then((res) => {
-        console.log(res); //ver o console com a resposta
+        console.log(res); 
         alert(`A música ${this.state.nome} foi criada com sucesso!`);
-        this.setState({ nome: "", artists: "", id: "" }); //Limpando o input
-        // this.getAllUsers();
+        this.setState({ nome: "", artists: "", id: "" }); 
+        
       })
       .catch((err) => {
-        console.log(err.response.data); //ver o console com o erro todo
-        console.log(err); //ver o console com o erro
+        console.log(err.response.data); 
+        console.log(err);
         alert(err.response.data.message);
-        this.setState({ nome: "", artists: "", id: "" }); //Limpando o input
+        this.setState({ nome: "", artists: "", id: "" }); 
       });
-    console.log(this.state); //Ver se está guardando o nome e email ao clicar
+    console.log(this.state); 
   };
 
   render() {
-    // const listaMusics = this.state.musics.map((music) => {
-    //   return (
-    //     <CardUsuario key={music.id}>
-    //       <p>{music.nome}</p>
-    //       <p>{music.artist}</p>
-    //       <p>{music.url}</p>
-    //     </CardUsuario>
-    //   );
-    // });
-
     return (
       <div>
         <TelaParaAddMusic>
@@ -174,8 +139,7 @@ export class TelaAddMusic extends React.Component {
               onChange={this.handleMusic}
             />
             <button onClick={() => this.addMusics()}>Adicionar música</button>
-            {/* <button onClick={this.addMusics()}>Adicionar música</button> */}
-          </Body>
+            </Body>
         </TelaParaAddMusic>
       </div>
     );

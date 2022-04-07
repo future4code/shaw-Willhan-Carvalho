@@ -1,7 +1,6 @@
 import React from "react";
 import { TelaAddMusic } from "./components/TelaAddMusic";
 import { TelaAddPlaylist } from "./components/TelaAddPlaylists";
-// import { TelaDetailsMusic } from "./components/TelaDetailsMusic";
 import { TelaDetailsPlaylists } from "./components/TelaDetailsPlaylists";
 import { TelaListaPlaylists } from "./components/TelaListaPlaylists";
 import { TelaSongListen } from "./components/TelaSongListen";
@@ -19,13 +18,13 @@ class App extends React.Component {
             irParaAddMusic={this.irParaAddMusic}
             irParaLista={this.irParaLista}
             irParaTocarMusica={this.irParaTocarMusica}
-            // irParaAddDetails={this.irParaAddDetails}
+          
           />
         );
       case "listaDePlaylists":
         return (
           <TelaListaPlaylists
-            // irParaAddDetails={this.irParaAddDetails}
+            
             irParaCriarPlaylist={this.irParaCriarPlaylist}
             irParaTocarMusica={this.irParaTocarMusica}
             irParaDetalhesPlaylists={this.irParaDetalhesPlaylists}

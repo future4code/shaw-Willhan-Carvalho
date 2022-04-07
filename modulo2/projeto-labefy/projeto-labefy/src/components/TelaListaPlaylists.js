@@ -61,27 +61,24 @@ export class TelaListaPlaylists extends React.Component {
     playlistDetails: [],
   };
   componentDidMount() {
-    this.pegarPlaylists(); //Mostra os usuários na tela ao abrir a tela sem precisar clicar em um botão
+    this.pegarPlaylists(); 
   }
-  //   componentDidUpdate() {
-  //     this.pegarUsuarios(); //Atualiza a tela quando eu deleto o usuário, pegando a lista de novo e deletando o usuário imediatamente
-  //   }
+  
 
   pegarPlaylists = () => {
-    // console.log(this.state); //Ver se realmente estou pegando os usuarios
+   
 
     const url =
       "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
-    const headers = { headers: { Authorization: "francine-lima-moreira" } };
+    const headers = { headers: { Authorization: "Willhan-Marques-Shaw" } };
     axios
       .get(url, headers)
       .then((res) => {
         this.setState({ playlists: res.data.result.list });
-        //   console.log([res]); //Ver os dados no console
-        //   console.log(res.data.result.list);
+        
       })
       .catch((err) => {
-        // console.log(err);
+  
 
         alert(
           "Ocorreu um problema, pode ser que você não esteja conectado a internet, tente novamente mais tarde."
@@ -91,38 +88,38 @@ export class TelaListaPlaylists extends React.Component {
 
   deletarPlaylist = (id) => {
     const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${id}`;
-    const headers = { headers: { Authorization: "francine-lima-moreira" } };
+    const headers = { headers: { Authorization: "Willhan-Marques-Shaw" } };
 
     axios
       .delete(url, headers)
       .then((res) => {
-        // console.log(res);
+     
         alert("Playlist deletada com sucesso");
-        this.pegarPlaylists(); //fazendo o mesmo do did update mas de outra forma, pegando os usuarios de novo apos o deletar.
+        this.pegarPlaylists(); 
       })
       .catch((err) => {
-        // console.log(err);
+        
         alert("Ocorreu um erro tente novamente mais tarde");
       });
   };
 
   detailsPlaylist = (id) => {
     const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${id}/tracks`;
-    const headers = { headers: { Authorization: "francine-lima-moreira" } };
+    const headers = { headers: { Authorization: "Willhan-Marques-Shaw" } };
     axios
       .get(url, headers)
       .then((res) => {
         console.log(res.data.result.tracks);
         this.setState({ playlistDetails: res.data.result.tracks });
-        this.detailsPlaylist(); //fazendo o mesmo do did update mas de outra forma, pegando os usuarios de novo apos o deletar.
+        this.detailsPlaylist(); 
       })
       .catch((err) => {
         console.log(err);
-        // alert("Ocorreu um erro tente novamente mais tarde");
+      
       });
   };
   render() {
-    // console.log(this.state.listaPlaylistsDetails); //Ver array de usuarios antes de dar o map
+  
     const listaPlaylists = this.state.playlists.map((playlist) => {
       return (
         <div key={playlist.id}>
@@ -142,7 +139,7 @@ export class TelaListaPlaylists extends React.Component {
         </div>
       );
     });
-    // console.log(listaPlaylists)
+    
     const listaPlaylistsDetails = this.state.playlistDetails.map((track) => {
       return (
         <TelaDetailsPlaylists
@@ -150,7 +147,7 @@ export class TelaListaPlaylists extends React.Component {
           nomeMusica={track.name}
           nomeArtista={track.artist}
         >
-          {/* {this.props.irParaDetalhesPlaylists} */}
+       
         </TelaDetailsPlaylists>
       );
     });
@@ -159,7 +156,7 @@ export class TelaListaPlaylists extends React.Component {
       <div>
         <Page>
           <MenuLateral>
-            {/* <button onClick={this.props.irParaDetalhesPlaylists}>Detalhes</button> */}
+            
             <button onClick={this.props.irParaCriarPlaylist}>Home</button>
           </MenuLateral>
           <CardUsuario>

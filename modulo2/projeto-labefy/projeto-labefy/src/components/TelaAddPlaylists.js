@@ -70,30 +70,27 @@ export class TelaAddPlaylist extends React.Component {
     const body = {
       name: this.state.nome,
     };
-    const headers = { headers: { Authorization: "francine-lima-moreira" } };
+    const headers = { headers: { Authorization: "Willhan-Marques-Shaw" } };
     axios
       .post(url, body, headers)
       .then((res) => {
-        console.log(res); //ver o console com a resposta
+        console.log(res); 
         alert(`A playlist ${this.state.nome} foi criada com sucesso!`);
-        this.setState({ nome: "" }); //Limpando o input
-        // this.getAllUsers();
+        this.setState({ nome: "" }); 
+        
       })
       .catch((err) => {
-        console.log(err.response.data); //ver o console com o erro todo
-        console.log(err); //ver o console com o erro
+        console.log(err.response.data); 
+        console.log(err); 
         alert(err.response.data.message);
-        this.setState({ nome: "" }); //Limpando o input
+        this.setState({ nome: "" }); 
       });
-    console.log(this.state); //Ver se está guardando o nome e email ao clicar
+    console.log(this.state); 
   };
 
   render() {
     return (
       <Page>
-        {/* <button onClick={this.props.irParaAddDetails}>
-            Busque por uma playlist
-          </button> */}
         <MenuLateral>
           <button onClick={this.props.irParaLista}>
             Ir para lista de Playlists

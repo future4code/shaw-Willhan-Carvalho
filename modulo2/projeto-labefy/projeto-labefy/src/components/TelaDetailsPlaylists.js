@@ -1,5 +1,4 @@
 import React from "react";
-// import axios from "axios";
 import styled from "styled-components";
 
 const Font = styled.div`
@@ -9,8 +8,7 @@ export class TelaDetailsPlaylists extends React.Component {
   render() {
     return (
       <div>
-        {/* <button onClick={this.props.irParaLista}>Voltar</button> */}
-        <Font>
+         <Font>
           <h4>Track</h4>
           <br />
           <li>Música: {this.props.nomeMusica}</li>
