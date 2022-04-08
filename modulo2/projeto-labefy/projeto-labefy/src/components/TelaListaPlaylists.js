@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { TelaDetailsPlaylists } from "./TelaDetailsPlaylists";
 
 const Page = styled.div`
-  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  background-image:  linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;

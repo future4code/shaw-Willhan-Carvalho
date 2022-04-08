@@ -3,7 +3,7 @@ import axios from "axios";
 import styled from "styled-components";
 
 const Page = styled.div`
-  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -75,14 +75,14 @@ export class TelaSongListen extends React.Component {
   componentDidMount() {
     this.pegarPlaylists(); 
   }
- 
+  
 
   pegarPlaylists = () => {
-   
+
 
     const url =
       "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
-    const headers = { headers: { Authorization: "Willhan-marques-Shaw" } };
+    const headers = { headers: { Authorization: "Willhan-Marques-Shaw" } };
     axios
       .get(url, headers)
       .then((res) => {
@@ -90,7 +90,7 @@ export class TelaSongListen extends React.Component {
        
       })
       .catch((err) => {
-       
+      
 
         alert(
           "Ocorreu um problema, pode ser que você não esteja conectado a internet, tente novamente mais tarde."
@@ -106,10 +106,11 @@ export class TelaSongListen extends React.Component {
       .then((res) => {
         console.log(res.data.result.tracks);
         this.setState({ track: res.data.result.tracks });
-       
+        
       })
       .catch((err) => {
-    
+       
+       
       });
   };
 
@@ -125,7 +126,7 @@ export class TelaSongListen extends React.Component {
       );
     });
 
-  
+    
     const listaTracks = this.state.track.map((track) => {
       return (
         <CardSong key={track.id}>
