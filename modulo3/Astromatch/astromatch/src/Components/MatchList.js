@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Header';
 import CardMatchs from "./CardMatchs"
 import Footer from './Footer';
@@ -6,7 +6,7 @@ import { ContainerMatchList, TituloMatchList } from './Style';
 
 
 function MatchList(props) {  
-  
+
   return (
     <ContainerMatchList>
       <Header goToHome={props.goToHome}/>

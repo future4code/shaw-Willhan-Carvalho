@@ -10,7 +10,7 @@ import { FooterHome, BotoesFooter } from './Style';
 function Footer(props) {
 
   const [profileLiked, setProfileLiked] = useState()
-
+   
   if(props.condicionalCabecalho==="Home"){    
 
     const choosePerson = () => {

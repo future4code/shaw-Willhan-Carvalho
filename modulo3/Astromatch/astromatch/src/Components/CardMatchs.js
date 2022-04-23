@@ -20,7 +20,7 @@ function CardMatchs () {
   
   useEffect(() => {
     getMatches()
-  }, [])
+  }, [matchList])
 
   const auxMatchList = matchList.map((item)=>{
    
