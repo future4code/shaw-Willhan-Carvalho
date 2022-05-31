@@ -41,5 +41,17 @@ app.post("/novatarefa", (req, res) => {
         const listUpdate = afazeres.filter((task) => {
             return task.id !== postdelete
         })
-        res.status(220).send(listUpdate)
+        res.status(200).send(listUpdate)
     })
+
+    app.get ("/pegartarefa/:id", (req,res)=>{
+        const idFazer = Number (req.params.id)
+        const findTarefa = afazeres.filter((arr)=>{
+          return arr.userId == idFazer
+        })
+        res.status(200).send(findTarefa)
+
+       
+        
+    })
+    
