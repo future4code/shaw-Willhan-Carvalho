@@ -240,16 +240,16 @@ SELECT * from Movie WHERE name LIKE "%vida%";
 ```
 
 b)
-```
+``
 SELECT * from Movie WHERE name LIKE "%sucesso%" OR synopsis LIKE "%sucesso%";
-```
+``
 
 c)
-```
+``
 SELECT * from Movie WHERE release_of_date < "2017-11-02";
-```
+``
 
 d)A 
-```
+``
 SELECT * from Movie WHERE (name LIKE "%vida%" OR synopsis LIKE "%vida%" AND evaluation > 7);
-```
+``
