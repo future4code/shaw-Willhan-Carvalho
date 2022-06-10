@@ -1,0 +1,32 @@
+//Cria usuário POST http://localhost:3003/users Content-Type: application/json
+
+{
+"name": "Nicoly Lima", "nickname": "Nike", "email": "Nike@gmail.com"
+}
+
+//Busca usuario por id GET http://localhost:3003/users/1649696450515 Content-Type: application/json
+
+//Edita usuário PUT http://localhost:3003/users/edit/1649696450515 Content-Type: application/json
+
+{
+
+"name": "Gustavo Debona", "nickname": "Gu", "email": "gustavod@gmail.com"
+}
+
+//Cria tarefa POST http://localhost:3003/task Content-Type: application/json
+
+{
+"title": "Criar banco dos alunos", "description": "Devemos criar o banco dos alunos para o módulo do backend", "limitDate": "14/11/2020", "status": "done", "creatorUserId": "1649696450515", "creatorUserNickname": "Gu"
+}
+
+//Buscar tarefa por id GET http://localhost:3003/task/1649701294230 Content-Type: application/json
+
+//Mostrar todos os usuários id e nickname GET http://localhost:3003/users Content-Type: application/json
+
+//Pesquisar usuário GET http://localhost:3003/users?query=Gu Content-Type: application/json
+
+//Pesquisar usuário DELETE http://localhost:3003/users/1649723609376 Content-Type: application/json
+
+POST http://localhost:3003/users Content-Type: application/json
+
+###
